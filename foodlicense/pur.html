@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Personal Portfolio Website</title> -->
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="labour.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  text-decoration: center;
+  background-color:#5F9EA0;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float:center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  height: 10px;
+  width: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Container {
+  width: 1100px;
+  height: 800px;
+}
+
+.Square {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  position: relative; /* To allow children to be absolutely positioned */
+}
+
+.Square img {
+  width: 100%;
+  height: 100%;
+}
+
+.Circle {
+  position: absolute; /* Use absolute positioning */
+  height: 70%;
+  width: 40%;
+  top: 20%;
+  left:25%;
+  background-color: rgba(254, 241, 96, 1);
+  border-radius: 50%;
+  /80px;/
+  margin-bottom: 50%;
+  /*30px; */
+  float: left;
+  margin-right: 20px;
+  opacity: 0.6  ;
+}
+.circle:hover{
+  opacity: 0.5;
+}
+
+.Circle h3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  text-align: center;
+}
+</style>
+
+<body>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<body>
+
+  <div class="col-sm-12 col-md-12 col-lg-12">
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">FoscosIndia</a></div>
+      <i class="fad fa-apple-crate"></i>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#" class="desktop-item"> License</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">License</label>
+          <ul class="drop-menu">
+            <li><a href="foodlicence.html">Food License</a></li>
+            <li><a href="foodReniwel.html">Food Reniwel</a></li>
+            <li><a href="labourLicence.html">Labour License</a></li>
+            <li><a href="drugLicence.html">Drug License</a></li>
+          </ul>
+        </li>
+        <!--reg-->
+        <li>
+            <a href="#" class="desktop-item">Registration</a>
+            <input type="checkbox" id="showDrop">
+            <label for="showDrop" class="mobile-item">Registration</label>
+            <ul class="drop-menu">
+              <li><a href="gstregistration.html">GST Registration</a></li>
+              <li><a href="gstfiling.html">GST Filing</a></li>
+              <li><a href="gstmodification.html">GST modification</a></li>
+            
+            </ul>
+          </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+
+    <!-- home section start -->
+   <!--  <div class="container">
+      <img src="images/abc.jpg" style=" height:100%; width: 100%"> -->
+   <!--  <section class="home" id="home">
+<div class="Container">
+  <div class="Square">
+    <img src="SiteData/Images/ProfilePics/ProfileImg.png" />
+
+    <div class="Circle">
+      <h3>Words Here</h3>
+    </div>
+  </div>
+</div>
+       <div class="max-width"> -->
+
+
+
+      
+    <div class="col-sm-12 col-md-12 col-lg-12"> 
+  <div class="Square">
+    <img src="images/abc.jpg"  style="width:100%; height: 100%">
+
+    <div class="Circle">
+      <div class="img">
+        <center style="padding: 10px">
+      <img src="images/1.png" style=" height: 80px; width: 80px; opacity: 0.7"  />
+    </div>
+      <h3>REGISTER FSSAI FOOD LICENCE AT LOW COST</h3><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="img1">
+        <center style="padding: 10px">
+      <img src="images/banner.jpg" style=" height: 80px; width: 90px; opacity: 10" />
+    </div>
+
+
+    </div>
+  </div>
+</div>
+  </section> 
+  </div>
+</div>
+
+<!-- <div class="col-sm-12 col-md-12 col-lg-12">
+
+  <div class="Square">
+    <img src="Images/abc.jpg" style="height: 100%; width: 100%">
+
+    <div class="Circle">
+      <h3 style="color:red;text-shadow: 0px 1px 0px 1px">REGISTER FSSAI FOOD LICENCE AT LOW COST</h3>
+
+      <div class="Circle">
+        <img src="images/1.png" style="height:100px; width:150px;">
+    </div>
+  </div> -->
+</div>
+
+<div class="body1">
+
+<div class="wrapper1">
+    <div class="table basic">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">₹</span>
+            <span class="price">28</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Including Govt. Fee Excluding GST
+            (for the 1st year only)
+            No Hidden Charge</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">1 To 5 Years</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Annual turnover of the business is less than 12 lakhs</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">FSSAI FoSCos Basic License</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button id="myBtn"> <!-- <a href="#contact"> -->Purchase</a></button>
+      </div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><form id="contact" class="oli-validate-form" action="email.php" method="post" enctype="multipart/form-data">
+           <h3>FSSAI & FoSCos Labour License Form</h3>
+          
+              <label>Name</label>
+                          
+              <div class="row">
+                <div class='col-8'>
+              <div class="input-group mb-3"> 
+                <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+              <label>Email</label>
+              
+              <div class="row">
+                <div class='col-8'>
+              <div class="input-group mb-3"> 
+                <input type="text" name="email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+              <label>Mobile</label>
+              <div class="row">
+                <div class='col-8'>
+              <div class="input-group mb-3"> 
+                <input type="tel"  name="phone"class="form-control" placeholder="Phone Number" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+          
+
+
+
+              <label>Select The Licence</label>
+              <div class="row">
+              <div class='col-8'>
+            <div class="input-group mb-3"> 
+              <select class="form-select form-select-lg mb-3"  name="licence"  aria-label=".form-select-lg example" style="width: 100%;" required>
+              <option selected>select The Licence</option>
+              <option value= " FOOD LICENCE"> FOOD LICENCE</option>
+              <option value= " DRUG LICENCE"> DRUG LICENCE</option>
+              <option value= " LABOUR LICENCE"> LABOUR LICENCE</option>
+              <option value= " FOOD RENIWAL">FOOD RENIWAL</option> 
+              <option value= " GST RESISTRATION">GST RESISTRATION</option>
+              <option value= " GST FILLING">GST FILLING</option>
+              <option value= " GST Modification">GST Modification</option>
+             </select>
+             </div>
+            </div>
+             </div>
+
+            
+            <label>select Turnover</label>
+          <div class="row">
+          <div class='col-8'>
+        <div class="input-group mb-3"> 
+          <select class="form-select form-select-lg mb-3"  name="turnover"  aria-label=".form-select-lg example" style="width: 100%;" required>
+          <option selected>select Turnover</option>
+          <option value="Turnover up to 12 lakhs/annum">Turnover less then 12 lakhs/annum</option>
+          <option value="Turnover more than 12 lakhs/annum but less than 20 crores/annum">Turnover more than 12 lakhs/annum but less than 20 crores/annum</option>
+          <option value="Turnover more than 20 crores/annum">Turnover more than 20 crores/annum</option>
+         </select>
+         </div>
+        </div>
+         </div>
+         <fieldset>
+         
+          <label>Select Nature of Bussiness</label>
+         <div class="row">
+           <div class='col-8'>
+          <div class="input-group mb-3"> 
+              <select class="form-select form-select-lg mb-3"  name="business"   aria-label=".form-select-lg example" style="width: 100%;" required>
+    
+          <option value="Manufacturer">Manufacturer</option>
+          <option value="Hotel">Hotel</option>
+          <option value="Restaurant">Restaurant</option>
+          <option value="Club / Canteen">Club / Canteen</option>
+          <option value="Dhaba, Boarding house, Banquet, Home Canteen/Dabba Wala, Labour stalls etc">Dhaba, Boarding house, Banquet, Home Canteen/</center>Dabba Wala, Labour stalls etc</option>
+          <option value="Hawker (Itinerant/ mobile Labour vendor)">Hawker (Itinerant/ mobile Labour vendor)</option>
+          <option value="Petty Retailer of snacks / tea shops">Petty Retailer of snacks / tea shops</option>
+          <option value="Wholesaler of Labour items">Wholesaler of Labour items</option>
+          <option value="Retailer of Labour items">Retailer of Labour items</option>
+          <option value="Distributor of Labour items">Distributor of Labour items</option>
+          <option value="Supplier of Labour items">Supplier of Labour items</option>
+          <option value="Caterer">Caterer</option>
+          <option value="Labour Vending Agencies">Labour Vending Agencies</option>
+          <option value="Transporter of Labour items">Transporter of Labour items</option>
+          <option value="Marketer of Labour items">Marketer of Labour items</option>
+          <option value="Storage (Cold / Refrigerated)">Storage (Cold / Refrigerated)</option>
+          <option value="Storage (Controlled Atmosphere + Cold)">Storage (Controlled Atmosphere + Cold)</option>
+          <option value="Storage (Except Controlled Atmosphere and Cold)">Storage (Except Controlled Atmosphere and Cold)</option>
+          <option value="Others">Others</option>
+        </select>
+           </div>
+                </div>
+                </div>
+    
+            <fieldset>
+              <label>Bussiness Name</label>
+              <div class="row">
+                <div class='col-8'>
+              <div class="input-group mb-3"> 
+                <input type="text" class="form-control"  name="bname"   placeholder="Bussiness Name " aria-label="Bussiness Name " aria-describedby="button-addon2" style="width: 100%;" required>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+    
+            <label>Address</label>
+            <div class="row">
+              <div class='col-5'>
+            <div class="input-group mb-3">
+             <div class="form-floating">
+              <textarea class="form-control"   name="Address" placeholder="Address" id="floatingTextarea" required></textarea></div>
+            </div>
+          </div>
+        </div> 
+          <label>Village or City Name</label>
+          <div class="row">
+            <div class='col-8'>
+          <div class="input-group mb-3"> 
+            <input type="text" class="form-control"  name="village" placeholder="Village or City Name" aria-label="Village or City Name " aria-describedby="button-addon2" required >
+            </div>
+            </div>
+            </div>
+    
+            <label>Nearest Railway Station Name (Optional)</label>
+            <div class="row">
+              <div class='col-8'>
+            <div class="input-group mb-3"> 
+              <input type="text" class="form-control"  name="railway_stn" placeholder="Type Your Railway Station Name.." aria-label="Type Your Railway Station Name.." aria-describedby="button-addon2">
+              </div>
+            </div>
+            </div>
+    
+
+
+
+
+    
+            <label>Select Your State</label>
+            <div class="row">
+              <div class='col-8'>
+               <div class="input-group mb-3"> 
+             <select class="form-select form-select-lg mb-3" name="state" aria-label=".form-select-lg example" style="width: 100%;" required>
+              <option selected>State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+           <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+           <option value="Assam">Assam</option>
+           <option value="Bihar">Bihar</option>
+           <option value="Chhattisgarh">Chhattisgarh</option>
+           <option value="Delhi">Delhi</option>
+           <option value="Goa">Goa</option>
+           <option value="Gujarat">Gujarat</option>
+           <option value="Haryana">Haryana</option>
+           <option value="Himachal Pradesh">Himachal Pradesh</option>
+           <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+           <option value="Jharkhand">Jharkhand</option>
+           <option value="Karnataka">Karnataka</option>
+           <option value="Kerala">Kerala</option>
+           <option value="Madhya Pradesh">Madhya Pradesh</option>
+           <option value="Maharashtra">Maharashtra</option>
+           <option value="Manipur">Manipur</option>
+           <option value="Meghalaya">Meghalaya</option>
+           <option value="Mizoram">Mizoram</option>
+           <option value="Nagaland">Nagaland</option>
+           <option value="Odisha">Odisha</option>
+           <option value="Punjab">Punjab</option>
+           <option value="Rajasthan">Rajasthan</option>
+           <option value="Sikkim">Sikkim</option>
+           <option value="Tamil Nadu">Tamil Nadu</option>
+           <option value="Telangana">Telangana</option>
+           <option value="Tripura">Tripura</option>
+           <option value="Uttarakhand">Uttarakhand</option>
+           <option value="Uttar Pradesh">Uttar Pradesh</option>
+           <option value="West Bengal">West Bengal</option>
+           <option value="Others">Others</option>
+          </select>
+          </div>
+        </div>
+        </div>
+        <fieldset>
+          <label>Pin Code</label>
+          <div class="row">
+            <div class='col-8'>
+          <div class="input-group mb-3"> 
+            <input type="tel" class="form-control" name="pin" placeholder="Pin Code" aria-label="Pin Code" aria-describedby="button-addon2" required>
+            </div>
+            </div>
+            </div>
+        </fieldset>
+        <label>Landmark Name</label>
+        <div class="row">
+          <div class='col-8'>
+        <div class="input-group mb-3"> 
+          <input type="text" class="form-control"  name="Landmark" placeholder="Landmark Name" aria-label="Landmark Name" aria-describedby="button-addon2"  required >
+          </div>
+          </div>
+          </div>   
+    
+
+    
+       <div class="row">
+        <div class='col-6'>
+      <div class="input-group mb-3"> 
+       <div class="d-grid gap-2 col-6">
+        <button class="btn btn-primary"   name="submit" type="submit">Submit</button>
+     
+     </div>
+     </div>
+     </div>
+     </div>
+     </fieldset>
+     </form>
+
+     </p>
+     </div></div>
+   </div>
+  
+
+
+
+
+
+    <div class="table premium">  
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">₹</span>
+            <span class="price">41</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Excluding Govt. Fee Excluding GST
+            One Time
+            No Hidden Charge</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">1 To 5 Years</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Annual turnover of the business is between 12 lakhs to 20 crores</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">FSSAI FoSCos State License</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button> <a href="#contact">Purchase</a></button></div>
+
+    </div>
+    <div class="table ultimate">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">₹</span>
+            <span class="price">55</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <!-- <div class="ribbon"><span>Recommend</span></div> -->
+      <ul class="features">
+        <li>
+          <span class="list-name">AIncluding Govt. Fee Excluding GST
+            (for the 1st year only)
+            No Hidden Charge</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+
+        </li>
+        <li>
+            <span class="list-name">1 To 5 Years</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+        <li>
+          <span class="list-name">Annual turnover of the business is above 20 crores </span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+      
+        <li>
+          <span class="list-name">CFSSAI FoSCos Central License</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+      
+      <!-- <div class="btn" onclick="openform()"><button>  <a href="#contact"> Purchase </a></button></div> -->
+       <div class="btn"><button> <a href="#contact">Purchase</a></button></div>
+    </div>
+  </div>
+</div>
+    
+    <!--work space-->
+    <!-- <div class=' bg-secondary cont' >
+      <div class="card"></div>
+        <div class="card-body">       -->   
+
+  <!-- <form action="/action_page.php" class="form-container">
+  </form>
+</div>
+</div> -->
+
+        
+          
+    
+<!-- form end-->
+    
+
+
+<div class="col-sm-12 col-md-12">
+
+     <section id="allpacakage" class="adjustPadding ">
+      <div class="container1">
+          <div class="row">
+              <div class="col-md-10 col-sm-10">
+                  <div class="block_heading">
+                      <h2 class="benifts-heading">Benefits of FSSAI FoSCos Certificate</h2>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-12 benifits-small-div">
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          TRUST OF THE CUSTOMERS
+                          <p class="benifits-text">An authentic communication is necessary to gain the customer trust. It will conduct better service and also keep the customers from unhealthy and adulterated Labour supply.
+                          </p>
+                      </li>
+                  </ul>
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          LEGAL ADVANTAGES
+                          <p class="benifits-text">FSSAI Certification will enhance the chance of legal enforcement and control over the department at a certain point and will encourage the establishment of several things to a particular area.</p>
+                      </li>
+                  </ul>
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          GOVERNMENT FUNDING AND LOANS
+                          <p class="benifits-text">The FSSAI registration will offer the privileges of Government Funding and Loans that can be easily accessible for the business operators.</p>
+                      </li>
+                  </ul>
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          USE OF FSSAI LOGO
+                          <p class="benifits-text">The use of FSSAI logo on your product will normally create goodwill trust worthiness amongst the consumers.</p>
+                      </li>
+                  </ul>
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          BRAND VALUE
+                          <p class="benifits-text">A company will automatically acquire Brand Value once it is FSSAI registered.</p>
+                      </li>
+                  </ul>
+
+              </div>
+              <div class="col-md-6 col-sm-12 benifits-small-div">
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          EXPANSION OF BUSINESS
+                          <p class="benifits-text">The FSSAI license will provide a wider scope and privilege of expansionat any geographic location.</p>
+                      </li>
+                  </ul>
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          Recognition of Government
+                          <p class="benifits-text">Government of India recognizes the FSSAI Registration resulting in to customer trust and huge base of consumers.</p>
+                      </li>
+                  </ul>
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          PERMIT OF Labour BUSINESS
+                          <p class="benifits-text">FSSAI License speaks about the safety of the customers concerning to Labour business.</p>
+                      </li>
+                  </ul>
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          BENEFITS FROM GOVERNMENT ACTIONS ON NON-COMPLIANCE
+                          <p class="benifits-text">Government will take action and bestow the help on the company in case of any non-compliance issue in the future.</p>
+                      </li>
+                  </ul>
+                  <ul class="benifits-ul">
+                      <li class="benifits-li">
+                          BOOST UP YOUR BUSINESS
+                          <p class="benifits-text">If a business is FSSAI registered, it will create handsome client base and boost up the business at a larger scale.</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+
+   <!-- services section start -->
+   <section class="services" id="services">
+    <h2 class="title">How We Work?</h2>
+    <div class="max-width">
+     
+        <div class="serv-content">
+          <div class="row">
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-user"></i>
+                    <div class="text">STEP-1</div>
+                    <p>Fill The Form And Make The Payment</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                  <i class="fas fa-user"></i>
+                    <div class="text">STEP-2</div>
+                    <p>Our Experts Will Call You For The Verification</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                  <i class="fas fa-user"></i>
+                    <div class="text">STEP-3</div>
+                    <p>You Will Receive The Certificate</p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="whyUs" class="block_padding">
+  <div class="container">
+      <div class="row">
+          <div class="block_heading">
+              <h2>Why Us?</h2>
+          </div>
+          <div class="col-md-12 col-sm-12"><br>
+              <div class="row">
+                  <div class="col-md-4 col-sm-12">
+                      <div class="hexagon_box">
+                          <div class="hexagon">
+                              <i>
+                         <img src="images/recognized.png.png" alt="recognized">
+                      </i>
+                              <p>Recognized by Govt. of India</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class="hexagon_box">
+                          <div class="hexagon">
+                              <i>
+                          <img src="images/happy_customers.png.png" alt="recognized">
+                      </i>
+                              <p>1 Lakh+ Happy Customers Across India</p>
+                          </div>
+                      </div>
+                  </div>
+                
+                  <div class="col-md-4 col-sm-12">
+                      <div class="hexagon_box">
+                          <div class="hexagon">
+                              <i>
+                          <img src="/images/data_security.png.png" alt="recognized">
+                      </i>
+                              <p>Data Security &amp; Trust</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class="hexagon_box">
+                          <div class="hexagon">
+                              <i>
+                          <img src="/images/experts.png" alt="recognized">
+                      </i>
+                              <p>Trained &amp; Professional Experts</p>
+                          </div>
+                      </div>
+                  </div>
+                  
+
+                  <div class="col-md-4 col-sm-12">
+                    <div class="hexagon_box">
+                        <div class="hexagon">
+                            <i>
+                        <img src="/images/on-time.png.png" alt="recognized">
+                    </i>
+                            <p> On-Time Service</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="col-md-4 col-sm-12">
+                      <div class="hexagon_box">
+                          <div class="hexagon">
+                              <i>
+                          <img src="/images/quick.png.png" alt="recognized">
+                      </i>
+                              <p>Super Fast Service</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class="hexagon_box">
+                          <div class="hexagon">
+                              <i>
+                          <img src="/images/24hr.png" alt="recognized">
+                      </i>
+                              <p>24x7 Platform</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class="hexagon_box">
+                          <div class="hexagon affordable_sign">
+                              <i>
+                          <img src="images/affordable.png" alt="recognized">
+                      </i>
+                              <p>Affordable Than Other Professionals</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--collapse section start-->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#">Food Licence India.com</a>
+
+  </div>
+  <!-- Copyright -->
+
+</footer>
+    <!--work space-->
+
+    <!-- footer section start -->
+  
+ <!-- Somehow I got an error, so I comment the script tag, just uncomment to use -->
+<!-- <script src="script.js"></script> -->
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

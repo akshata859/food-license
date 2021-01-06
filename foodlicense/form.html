@@ -1,0 +1,231 @@
+<form method="POST">
+    <div class=' bg-secondary cont' >
+      <div class="card"></div>
+        <div class="card-body" >
+        
+          <form id="contact" class="oli-validate-form" action="email.php" method="post" enctype="multipart/form-data">
+           <h3>FSSAI & FoSCos Labour License Form</h3>
+          
+              <label>Name</label>
+              
+              <div class="row">
+                <div class='col-8'>
+              <div class="input-group mb-3"> 
+                <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+              <label>Email</label>
+              
+              <div class="row">
+                <div class='col-8'>
+              <div class="input-group mb-3"> 
+                <input type="text" name="email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+              <label>Mobile</label>
+              <div class="row">
+                <div class='col-8'>
+              <div class="input-group mb-3"> 
+                <input type="tel"  name="phone"class="form-control" placeholder="Phone Number" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+          
+
+
+
+              <label>Select The Licence</label>
+              <div class="row">
+              <div class='col-8'>
+            <div class="input-group mb-3"> 
+              <select class="form-select form-select-lg mb-3"  name="licence"  aria-label=".form-select-lg example" style="width: 100%;" required>
+              <option selected>select The Licence</option>
+              <option value= " FOOD LICENCE"> FOOD LICENCE</option>
+              <option value= " DRUG LICENCE"> DRUG LICENCE</option>
+              <option value= " LABOUR LICENCE"> LABOUR LICENCE</option>
+              <option value= " FOOD RENIWAL">FOOD RENIWAL</option> 
+              <option value= " GST RESISTRATION">GST RESISTRATION</option>
+              <option value= " GST FILLING">GST FILLING</option>
+              <option value= " GST Modification">GST Modification</option>
+             </select>
+             </div>
+            </div>
+             </div>
+
+            
+            <label>select Turnover</label>
+          <div class="row">
+          <div class='col-8'>
+        <div class="input-group mb-3"> 
+          <select class="form-select form-select-lg mb-3"  name="turnover"  aria-label=".form-select-lg example" style="width: 100%;" required>
+          <option selected>select Turnover</option>
+          <option value="Turnover up to 12 lakhs/annum">Turnover less then 12 lakhs/annum</option>
+          <option value="Turnover more than 12 lakhs/annum but less than 20 crores/annum">Turnover more than 12 lakhs/annum but less than 20 crores/annum</option>
+          <option value="Turnover more than 20 crores/annum">Turnover more than 20 crores/annum</option>
+         </select>
+         </div>
+        </div>
+         </div>
+         <fieldset>
+         
+          <label>Select Nature of Bussiness</label>
+         <div class="row">
+           <div class='col-8'>
+          <div class="input-group mb-3"> 
+              <select class="form-select form-select-lg mb-3"  name="business"   aria-label=".form-select-lg example" style="width: 100%;" required>
+    
+          <option value="Manufacturer">Manufacturer</option>
+          <option value="Hotel">Hotel</option>
+          <option value="Restaurant">Restaurant</option>
+          <option value="Club / Canteen">Club / Canteen</option>
+          <option value="Dhaba, Boarding house, Banquet, Home Canteen/Dabba Wala, Labour stalls etc">Dhaba, Boarding house, Banquet, Home Canteen/</center>Dabba Wala, Labour stalls etc</option>
+          <option value="Hawker (Itinerant/ mobile Labour vendor)">Hawker (Itinerant/ mobile Labour vendor)</option>
+          <option value="Petty Retailer of snacks / tea shops">Petty Retailer of snacks / tea shops</option>
+          <option value="Wholesaler of Labour items">Wholesaler of Labour items</option>
+          <option value="Retailer of Labour items">Retailer of Labour items</option>
+          <option value="Distributor of Labour items">Distributor of Labour items</option>
+          <option value="Supplier of Labour items">Supplier of Labour items</option>
+          <option value="Caterer">Caterer</option>
+          <option value="Labour Vending Agencies">Labour Vending Agencies</option>
+          <option value="Transporter of Labour items">Transporter of Labour items</option>
+          <option value="Marketer of Labour items">Marketer of Labour items</option>
+          <option value="Storage (Cold / Refrigerated)">Storage (Cold / Refrigerated)</option>
+          <option value="Storage (Controlled Atmosphere + Cold)">Storage (Controlled Atmosphere + Cold)</option>
+          <option value="Storage (Except Controlled Atmosphere and Cold)">Storage (Except Controlled Atmosphere and Cold)</option>
+          <option value="Others">Others</option>
+        </select>
+           </div>
+                </div>
+                </div>
+    
+            <fieldset>
+              <label>Bussiness Name</label>
+              <div class="row">
+                <div class='col-8'>
+              <div class="input-group mb-3"> 
+                <input type="text" class="form-control"  name="bname"   placeholder="Bussiness Name " aria-label="Bussiness Name " aria-describedby="button-addon2" style="width: 100%;" required>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+    
+            <label>Address</label>
+            <div class="row">
+              <div class='col-5'>
+            <div class="input-group mb-3">
+             <div class="form-floating">
+              <textarea class="form-control"   name="Address" placeholder="Address" id="floatingTextarea" required></textarea></div>
+            </div>
+          </div>
+        </div> 
+          <label>Village or City Name</label>
+          <div class="row">
+            <div class='col-8'>
+          <div class="input-group mb-3"> 
+            <input type="text" class="form-control"  name="village" placeholder="Village or City Name" aria-label="Village or City Name " aria-describedby="button-addon2" required >
+            </div>
+            </div>
+            </div>
+    
+            <label>Nearest Railway Station Name (Optional)</label>
+            <div class="row">
+              <div class='col-8'>
+            <div class="input-group mb-3"> 
+              <input type="text" class="form-control"  name="railway_stn" placeholder="Type Your Railway Station Name.." aria-label="Type Your Railway Station Name.." aria-describedby="button-addon2">
+              </div>
+            </div>
+            </div>
+    
+
+
+
+
+    
+            <label>Select Your State</label>
+            <div class="row">
+              <div class='col-8'>
+               <div class="input-group mb-3"> 
+             <select class="form-select form-select-lg mb-3" name="state" aria-label=".form-select-lg example" style="width: 100%;" required>
+              <option selected>State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+           <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+           <option value="Assam">Assam</option>
+           <option value="Bihar">Bihar</option>
+           <option value="Chhattisgarh">Chhattisgarh</option>
+           <option value="Delhi">Delhi</option>
+           <option value="Goa">Goa</option>
+           <option value="Gujarat">Gujarat</option>
+           <option value="Haryana">Haryana</option>
+           <option value="Himachal Pradesh">Himachal Pradesh</option>
+           <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+           <option value="Jharkhand">Jharkhand</option>
+           <option value="Karnataka">Karnataka</option>
+           <option value="Kerala">Kerala</option>
+           <option value="Madhya Pradesh">Madhya Pradesh</option>
+           <option value="Maharashtra">Maharashtra</option>
+           <option value="Manipur">Manipur</option>
+           <option value="Meghalaya">Meghalaya</option>
+           <option value="Mizoram">Mizoram</option>
+           <option value="Nagaland">Nagaland</option>
+           <option value="Odisha">Odisha</option>
+           <option value="Punjab">Punjab</option>
+           <option value="Rajasthan">Rajasthan</option>
+           <option value="Sikkim">Sikkim</option>
+           <option value="Tamil Nadu">Tamil Nadu</option>
+           <option value="Telangana">Telangana</option>
+           <option value="Tripura">Tripura</option>
+           <option value="Uttarakhand">Uttarakhand</option>
+           <option value="Uttar Pradesh">Uttar Pradesh</option>
+           <option value="West Bengal">West Bengal</option>
+           <option value="Others">Others</option>
+          </select>
+          </div>
+        </div>
+        </div>
+        <fieldset>
+          <label>Pin Code</label>
+          <div class="row">
+            <div class='col-8'>
+          <div class="input-group mb-3"> 
+            <input type="tel" class="form-control" name="pin" placeholder="Pin Code" aria-label="Pin Code" aria-describedby="button-addon2" required>
+            </div>
+            </div>
+            </div>
+        </fieldset>
+        <label>Landmark Name</label>
+        <div class="row">
+          <div class='col-8'>
+        <div class="input-group mb-3"> 
+          <input type="text" class="form-control"  name="Landmark" placeholder="Landmark Name" aria-label="Landmark Name" aria-describedby="button-addon2"  required >
+          </div>
+          </div>
+          </div>
+    
+    
+    
+
+    
+       <div class="row">
+        <div class='col-6'>
+      <div class="input-group mb-3"> 
+       <div class="d-grid gap-2 col-6">
+        <button class="btn btn-primary"   name="submit" type="submit">Submit</button>
+      </div>
+         </div>
+        </div>
+
+      
+        </form>
+          
+        </div>
+        </div>
+        </div>
+     </div>
+    

@@ -1,0 +1,67 @@
+
+@media (min-width: 768px) and (max-width: 688px) {
+  .circle{
+    height: 100px;
+    width: 100px;
+    margin-top: -100px
+  }
+  .circle .img0 img{
+    height: 50%;
+    width: 100%;
+    margin-left: 100px;
+   
+  }
+  .circle .text{
+    font-size: -20px;
+  }
+
+  .circle .img1 img{
+    height: 50px;
+    width: 50px;
+    margin-top: -100;
+    margin-left: -500px;
+    margin-bottom: 10px;
+
+  }
+}
+@media (min-width: 1440px) and (max-width: 2280px) {
+  /laptop view/
+  /* CSS */
+  .circle{
+    width: 27%;
+    height: 22%;
+    margin-top: -350px;
+    margin-left: 120px;
+  }
+  .circle .img11 img{
+    height: 35%;
+    width: 35%;
+    margin-left: 110px;
+    margin-top: 10px
+  }
+  .circle .text{
+    width: 75%;
+    height: 100%;
+    margin-top: 170px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 688px) {
+  .circle{
+    height: -10px;
+    width: 10px;
+  }
+
+
+   .circal
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .circal
+    {
+      position: absolute;
+      top: 60px;
+      left: 80px;
+    }
